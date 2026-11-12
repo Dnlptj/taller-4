@@ -1,0 +1,24 @@
+<h2>Iniciar sesión</h2>
+<p class="demo">Usuario y clave: <strong>admin</strong></p>
+
+<form (ngSubmit)="entrar()">
+  <input
+    type="text"
+    name="usuario"
+    placeholder="Usuario"
+    [(ngModel)]="usuario"
+    required
+  />
+  <input
+    type="password"
+    name="clave"
+    placeholder="Clave"
+    [(ngModel)]="clave"
+    required
+  />
+  <button type="submit">Entrar</button>
+</form>
+
+@if (error()) {
+  <p class="error">Usuario o clave incorrectos.</p>
+}
