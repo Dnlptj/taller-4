@@ -1,0 +1,15 @@
+<div class="mapa-wrap">
+  <mgl-map
+    [accessToken]="token"
+    [style]="'mapbox://styles/mapbox/streets-v11'"
+    [zoom]="[12]"
+    [center]="centro"
+    (mapClick)="onMapClick($event)"
+  ></mgl-map>
+
+  @if (mensaje) {
+    <div class="coords">
+      {{ mensaje }}
+    </div>
+  }
+</div>

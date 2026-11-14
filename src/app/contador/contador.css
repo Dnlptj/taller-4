@@ -1,0 +1,16 @@
+.numero {
+  font-size: 48px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 16px 0;
+}
+
+button {
+  margin-right: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1a73e8;
+  color: #fff;
+  cursor: pointer;
+}
