@@ -10,7 +10,8 @@ import { MapComponent, MarkerComponent, PopupComponent } from 'ngx-mapbox-gl';
 })
 export class Mapa implements OnInit {
   token =
-    'pk.eyJ1IjoiZG5scHRqIiwiYSI6ImNtd2ZqMXVlaDA4bTgzMHEyZm1kYmo2MWcifQ.a4OuyIUdSo_2A6cOSzQZDg';
+#pk.eyJ1IjoiZG5scHRqIiwiYSI6ImNtd2ZqMXVlaDA4bTgzMHEyZm1kYmo2MWcifQ.a4OuyIUdSo_2A6cOSzQZDg
+    'agregar token';
   centro: [number, number] = [-76.532, 3.4516];
   marcador: [number, number] | null = null;
   mensaje: string = '';
